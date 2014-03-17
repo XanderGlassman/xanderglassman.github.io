@@ -1,0 +1,22 @@
+* {
+	font-family:Helvetica, sans-serif;
+	}
+
+body {
+	background-color: #dddddd;
+	}
+
+h1 {
+	color: #ooo;
+	font-family:helvetica,}
+
+
+#values {
+		background-color: #eeeeee;
+		border-style:solid;
+		border-color:black;
+		border-width: 2px;
+		}
+
+.title {text-align: center
+		}

@@ -1,0 +1,71 @@
+@font-face {
+	  font-family: 'LatoG';
+	  font-style: normal;
+	  font-weight: 700;
+	  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+	}
+body{width:100%;
+	background-color: #eeeeee;
+	font-family: 'Lato',Helvetica, sans-serif;
+	}
+	#wrapper {
+			width:100%;
+			margin: 0 auto;
+			max-width: 1400px;
+			min-width:960px;
+			background-color:#EDE7D3;
+			border-radius:24px;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+			
+			}	  
+		#title {text-align: center}
+		#top_nav {text-align: center;
+				font-size: 2em}
+			a:hover {color: red;
+					background-color: green}
+			a:link {text-decoration: none;}
+			a:visited {color:white;}
+
+		#side_bar {	background-color: #333333;
+					float:left;
+					width:30%;
+					min-height: 590px;
+					color:#eeeeee;
+					line-height: 2em;
+					font-style: bold;
+					list-style: none;
+					border-radius:24px;
+					}
+			ul {
+				list-style:none}
+		#main_body {
+					float:right;
+					width:70%;
+					background-color:#bbbbbb;
+					min-height: 590px;
+					border-radius:24px;
+					padding:0px,0px, 0px;
+					text-align: left
+					}
+			.dog
+				{font-style:italic; 
+				color:red;}
+
+			#caption {
+				position:absolute;
+				z-index:2;
+				top:650px;
+				margin-right: auto;
+				margin-left:150px;
+				font-style:bold;}
+			img {position:absolute;
+				z-index:1;
+				margin: auto;
+				padding:auto;}
+		#footer_values {width:100%;
+						background-color:#EDE7D3;
+						text-align: center;
+						display:inline;}		
+
