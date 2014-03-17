@@ -51,10 +51,13 @@ a:hover {color:black;}
 				border-color:#eee;
 				border-radius:2%;
 				background-color:#222;
-				min-height: 650px}
+				min-height: 500px}
+
+h3 {color:#eee;}
 p {font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 18px;
-	color:#eee;}
+	color:#eee;
+	line-height: 175%}
 
 li { font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 18px;
@@ -67,7 +70,6 @@ li { font-family: 'Open Sans Condensed', sans-serif;
 				max-width: none;}
 	body {min-width:480px;}
 	#banner{display:none;}
-
 
 
 
