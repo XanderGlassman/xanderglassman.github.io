@@ -10,7 +10,7 @@ for(var i = 0; i < array.length; i++){
 }
 
 console.log(runningSum)
-
+cl
 
 // As a user, I want to be able to find the mean of a list of numbers.
 
