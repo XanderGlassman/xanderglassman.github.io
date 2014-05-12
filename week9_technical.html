@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to the Xander Zone!</title>
+		<link rel="stylesheet" type="text/css" href="C:\Users\Xander Glassman\Documents\GitHub\phase_0_unit_3\week_9\HTML&CSS\stylesheets\Xander_Blog.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>			
+
+			<div id="title"> 
+				<h2>Xander's Page</h2>
+			</div>
+			<div id= "banner">
+				<img src="C:\Users\Xander Glassman\Documents\GitHub\phase_0_unit_3\week_9\HTML&CSS\images\Search.jpg">
+			</div>
+			<div id="nav">
+					<a>Xander's Blog</a>
+					<a href="index.html">DogCorp</li>
+					<a href="unit1_week1/blog.html">Favorite Sites</li>
+					<a href="week2_technical.html">Javascript</a></li>
+					<a href="week2_cultural_blog">Cultural</a></li>
+			</div>
+				<div class="odd">
+					<h3>Cross Site Scripting</h3>
+
+					<p>Cross Site Scripting is kind of like SQLinjection except instead of ) and ;, the dangerous characters in this case are the angle brackets from HTML. If you don't "escape" angle brackets by converting those bracket into something that the browser doesn't see as an indicator of a tag (ie & l t ; [minus the spaces] for &lt; and & g t ; for &gt;), there will be a vulnerability in your site. This is because someone can put script tags into the input and then write whatever javascript they want. Apparently it's a pretty insidious problem, because anywhere a user inputs something there is the potential for that custom javascript to come into play. Some big companies even have bounties for exposing these weaknesses, because the other option, almost complete vulnerability, is so much less appealing.</p> 
+
+				</div>	
+
+				<div class="even">
+					
+
+										<h3>SQL Injection</h3>
+
+					<p> SQL is a the classic database language, around long before the Internet. However, because of its age, it is susceptible to SQL injection.
+						Back in the day, you didn't have to worry about a user dropping some malicious input because you were the only one talking to the database.
+						This left over issue means that a user can use dangerous characters like " and ; to end up creating a new command when inputing data into a database. 
+						This ultimately leaves all of the information in your database up for grabs, which is no good.
+					</p>
+	
+					<p>
+						To avoid this you can use an escape string, which creates a function which puts a / in front of all the dangerous characters. 
+						The / tells the computer that the following character should only be interpreted only as text.
+						This is usually a pretty good way to fix the problem, but there can be small bugs and whatnot.
+						So another, more standard way to fix it to use prepared statements. 
+						These guys basically mark all the user's input as unsafe, telling the computer "Don't do anything beyond putting this stuff into the database, there are no commands here." 
+					</p>
+
+				</div>
+
+				<div class="odd">
+					<h3> Cross Site Request Forgery (Week 9)</h3>
+
+					<p>Today's web is apps rely on users to actively interact with web-pages though get requests. They're really great because they facilitate a user generated web, and a customized experience, but the problem is that they can be used by malicious website to mess with other web pages. For instance, if you logged into a web forum or somewhere with rather lax security, malicious websites can send a get request in the background to that website to say, delete your account on the other site. When the targeted site receives the request, it just executes the code, ignoring where it came from.</p>
+
+					<p> To fix this, HTML has a referrer header that tell a website where its request comes from. However, if users have some sort of customizing software in their browsers, as many do, the request is interpreted to be external and malicious. To avoid this while maintaining security, developers can use a nonce, aone time key that the user has to input in order to prove they're coming from the right spot.  
+					</p>
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+
+	</body>
+</html>
+
+<!-- Reflection 
+
+	I really liked this challenge, it was fun to see what I could to to really professionalize my website and bring it to the next level. I feel like I have a lot more control of how my div's interact with one another thanks to the research and work i did on relative and absolute positioning. Overall it was pretty neat to actually make a website that I could envision finding on-line, it's making me excited about learning how to bring them to life.-->

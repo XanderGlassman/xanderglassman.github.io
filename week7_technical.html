@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Welcome to Dog Corp</title>
-		<link rel="stylesheet" type="text/css" href="unit1_week2/Stylesheets/Xander_Blog.css">
+		<title>Welcome to the Xander Zone!</title>
+		<link rel="stylesheet" type="text/css" href="C:\Users\Xander Glassman\Documents\GitHub\phase_0_unit_3\week_9\HTML&CSS\stylesheets\Xander_Blog.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id= "wrapper">			
+			<div id= "banner">
+				<img src="C:\Users\Xander Glassman\Documents\GitHub\phase_0_unit_3\week_9\HTML&CSS\images\Search.jpg">
+			</div>
 			<header>
-					<h2>Xander's Blog</h2>
+					<a>Xander's Blog</a>
 					<a href="index.html">DogCorp</li>
 					<a href="unit1_week1/blog.html">Favorite Sites</li>
 					<a href="week2_technical.html">Javascript</a></li>
 					<a href="week2_cultural_blog">Cultural</a></li>
 			</header>
-			<div id= "banner">
-				<img src="unit1_week2/Images/Cartoons-calvin-and-hobbes-3-600x960.jpg">
-			</div>
 			<div id= "bottom_text">
+
 				<h3>SQL Injection</h3>
 
 				<p> SQL is a the classic database language, around long before the internet. However, because of its age, it is susceptible to SQL injection.
@@ -28,12 +28,13 @@
 				</p>
 				<p>
 					To avoid this you can use an escape string, which creates a function which puts a / in front of all the dangerous characters. 
-					The / tells the computer that the following character should only be interpreted only as text. 
-					This is usually a pretty good way to fix the problem, but there can be small bugs and whatnot. 
+					The / tells the computer that the following character should only be interpreted only as text.
+					This is usually a pretty good way to fix the problem, but there can be small bugs and whatnot.
 					So annother, more standard way to fix it to use prepared statements. 
 					These guys basically mark all the user's input as unsafe, telling the computer "Don't do anything beyond putting this stuff into the database, there are no commands here." 
 					</p>
 				
 			</div>
-		</div>
+
 	</body>
+</html>
