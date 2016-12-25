@@ -2,10 +2,29 @@
 <html>
 	<head>
 		<title>test</title>
+		<script
+                   src="https://code.jquery.com/jquery-3.1.1.min.js"
+                   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                   crossorigin="anonymous">
+		</script>
+
+		<script>
+		function DecimalGenerate() {
+		    var min = 1.03,
+			max = 5.99,
+			NumberResult = Math.random() * (max - min) + min;
+
+		    $('#text1').val(parseFloat(NumberResult).toFixed( 2 ));
+		};
+
+		$( document ).ready(function() {
+			DecimalGenerate();
+		});
+		</script> 
 	</head>
 	<body>
 		<div id= "wrapper">
-			<h2>Dog Corp. Consulting</h2>
+			<h2 id="text1"></h2>
 		</div>
 	</body>
 </html>
